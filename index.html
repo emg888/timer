@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <title>Timer</title>
+</head>
+<body>
+  <div class="clock">
+    <div class="time">
+      <img src="Images/Clock_simple.svg" />
+      <p id="demo"></p>
+      <br />
+      <div class="small">
+        <p id="min">MIN</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="image">
+        <button type="button" id="up" class="btn btn-dark" onclick="down()"><img src="Images/down.svg" /></button>
+        <button type="button" id="down" class="btn btn-dark" onclick="up()"><img src="Images/up.svg" /></button>
+      </div>
+      <button class="btn" id="power" value="50" onclick="turnOnOff()">
+        <i class="fa fa-power-off"></i> PWR</button>
+    </div>
+
+    <div class="toggle">
+      <p>MIN</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slide round" onclick="toggle()"></span>
+      </label>
+      <p>HRS</p>
+    </div>
+
+    <div class="controls">
+      <div class="slidecontainer">
+        <input name="slider" id="myinput" type="range" min="1" max="100" value="50" />
+
+      </div>
+      <div class='ruler'>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+        <div class='cm'>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+          <div class='mm'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="JS/slider.js"></script>
+</html>
